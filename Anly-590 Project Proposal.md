@@ -30,7 +30,9 @@ A deep neural network that can compose some piano music by learning from pinao m
 
 <div style="page-break-after: always;"></div>
 
+<br />
 
+<br />
 
 ## 1. Team
 
