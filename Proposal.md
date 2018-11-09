@@ -22,7 +22,7 @@ Wei Liu, Yinzhi Xi, Jie He
 
 ### *The Piano Boy*
 
-A deep neural network that can compose some piano music by learning from pinao music datasets contains Beethoven, Mozart, Bach and other famous composers' works using some deep learning methods. 
+A deep neural network that can compose some piano music by learning from piano music datasets contains Beethoven, Mozart, Bach and other famous composers' works using some deep learning methods. 
 
 <br />
 
