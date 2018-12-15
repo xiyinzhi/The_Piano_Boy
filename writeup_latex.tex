@@ -62,15 +62,17 @@ The dataset used in the project is a combination of collections of midi files, w
 \item Deep Jammer: 327 pieces
 \item Piano-midi.de: 124 pieces
 \item MuseData: 783 pieces
+\item Chopin: 98 pieces
 \end{itemize}
 
+We use a combination of the first 4 datasets as the training set, and the Chopin files as the test set. It is acceptable because these music files are all classical piano midi files with similar features. The total training set contains about 1300 pieces of midi files, and has size of around 10 MB. Each piece of midi files can generate 1000 sequences for corresponding inputs and outputs, with sequence length of 100. The test set contains 98 pieces of midi files. Each time we want to generate a piece of music, our program choose a sequence of 100 from the test set randomly as the input and output the generated music.
 
-A midi file is a Musical Instrument Digital Interface file and it explains what notes are played and how long or loud each note should be. For data pre-processing, we used Music21, a Python toolkit developed by MIT, to extract musical notation of midi files like notes and chords.
+A midi file is a Musical Instrument Digital Interface file and it explains what notes are played and how long or loud each note should be. For data pre-processing, we used \textit{Music21}, a Python toolkit developed by MIT, to extract musical notation of midi files like notes and chords.
 
 \section{Methods}
 
 \subsection{Transforming MIDI files}
-We use music21 which is a open-source library to extract note and chord information from midi files.
+We use \textit{Music21} library, which is a open-source library for Python, to extract note and chord information from midi files.
 
 \subsection{Basic Structure}
 We use a 5 layers neural network to do this music generation task, it includes 3 LSTM layers, each LSTM layer contains 512 nodes, 1 full-connection layer with size 256 and 1 output layer. The input of the neural network is 100 beat pieces, the piece is encoded into a vector, the vector length varies in our different implementations. The output of the neural network is one beat piece. In the training stage, we generate training set from our midi files and feed it into our 5 layers model, in the generating stage, we randomly select a 100 beat piece as model input, model predicts the next beat piece and append it into input, remove the first beat piece and repeat this procedure several times.
@@ -90,11 +92,6 @@ The final improvement is to support multiple keys prediction. In order to genera
 \section{Results}
 The Stacked LSTM has multiple hidden LSTM layers where each layer contains multiple memory cells and it is an extension to the basic LSTM model. We started from a 3-layer stacked LSTM model and made some modifications to it. We employed the following variations: 
 \begin{itemize}
-\item Three LSTM Layers: 
-
-Dimensions in 3 LSTM: (512,512,512)
-
-See loss figures in Fig.~\ref{fig1}.
 
 \item Three LSTM Layers with optimized features: 
 
@@ -134,7 +131,18 @@ See loss figures in Fig.~\ref{fig3}.
 \end{figure}
 
 
-It takes 20 hours to run 200 epoches with a 1080ti GPU.
+It takes 20 hours to run 200 epochs with a 1080ti GPU.
+
+After about 190 epochs, the model fits best.
+In order to compare the training effects with different epochs, we generated several midi files with 1, 50, 100, 152, 191 epochs separately. See comparing figures in Fig.~\ref{fig4}.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[scale=0.45]{compare_results.png}}
+\caption{Comparison results with different epochs\protect\footnotemark}
+\label{fig4}
+\end{figure}
+\footnotetext{from top to bottom are test samples with 1, 50, 100, 152, 191 epochs separately}
+
 We believe that the same 100 previous beat pieces cannot guarantee that the following keys are unique, so we don't use accuracy as the measure. Instead, we let people to listen to our generated music and music from some related work and vote for the best music. See results in Table.~\ref{tab1}.
 
 \begin{table}[htbp]
@@ -154,7 +162,6 @@ Deep Jammer& 4\\
 \label{tab1}
 \end{center}
 \end{table}
-
 
 \section{Discussion of Results}
 Our final model can predict rest note which output is all 0s and also can predict any combination of note and chord which output can have multiple 1s. In generated music, we can see sometimes it looks like our model can memorize the training music which is really amazing.
