@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.12.9)  15 DEC 2018 16:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.12.9)  15 DEC 2018 20:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -505,27 +505,143 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 ]
-<loss_optimal.png, id=11, 390.45876pt x 266.9975pt>
-File: loss_optimal.png Graphic file (type png)
-<use loss_optimal.png>
-Package pdftex.def Info: loss_optimal.png  used on input line 103.
+<pics/loss_optimal.png, id=11, 390.45876pt x 266.9975pt>
+File: pics/loss_optimal.png Graphic file (type png)
+<use pics/loss_optimal.png>
+Package pdftex.def Info: pics/loss_optimal.png  used on input line 103.
 (pdftex.def)             Requested size: 234.27705pt x 160.19972pt.
-<log_to256.png, id=13, 390.45876pt x 266.9975pt>
-File: log_to256.png Graphic file (type png)
-<use log_to256.png>
-Package pdftex.def Info: log_to256.png  used on input line 115.
+<pics/log_to256.png, id=13, 390.45876pt x 266.9975pt>
+File: pics/log_to256.png Graphic file (type png)
+<use pics/log_to256.png>
+Package pdftex.def Info: pics/log_to256.png  used on input line 115.
 (pdftex.def)             Requested size: 234.27705pt x 160.19972pt.
- [2 <./loss_optimal.png> <./log_to256.png>]
-<log_4lstm.png, id=19, 381.425pt x 266.9975pt>
-File: log_4lstm.png Graphic file (type png)
-<use log_4lstm.png>
-Package pdftex.def Info: log_4lstm.png  used on input line 128.
+ [2 <./pics/loss_optimal.png> <./pics/log_to256.png>]
+<pics/log_4lstm.png, id=19, 381.425pt x 266.9975pt>
+File: pics/log_4lstm.png Graphic file (type png)
+<use pics/log_4lstm.png>
+Package pdftex.def Info: pics/log_4lstm.png  used on input line 128.
 (pdftex.def)             Requested size: 228.85675pt x 160.19972pt.
 <compare_results.png, id=20, 520.44438pt x 358.84062pt>
 File: compare_results.png Graphic file (type png)
 <use compare_results.png>
 Package pdftex.def Info: compare_results.png  used on input line 140.
 (pdftex.def)             Requested size: 234.1978pt x 161.47678pt.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.176 ...n Keras, https://github.com/cipher813/AI_
+                                                  Jukebox
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.177 \bibitem{b2}
+                   Sigurgeirsson, S. Classical Piano Composer, https://githu...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.177 \bibitem{b2}
+                   Sigurgeirsson, S. Classical Piano Composer, https://githu...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.177 \bibitem{b2}
+                   Sigurgeirsson, S. Classical Piano Composer, https://githu...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.178 \bibitem{b3}
+                   Svegliato, J. Deep Jammer, https://github.com/justinsvegl...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.178 \bibitem{b3}
+                   Svegliato, J. Deep Jammer, https://github.com/justinsvegl...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.178 \bibitem{b3}
+                   Svegliato, J. Deep Jammer, https://github.com/justinsvegl...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--178
+[]\OT1/ptm/m/n/8 McMahon, B. Mu-sic gen-er-a-tor uti-liz-ing a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--178
+\OT1/ptm/m/n/8 Bidi-rec-tional LSTM ar-chi-tec-ture in Keras,
+ []
+
+
+Overfull \hbox (90.4754pt too wide) in paragraph at lines 176--178
+\OT1/ptm/m/n/8 https://github.com/cipher813/AI$[]\OML/cmm/m/it/8 ukeboxSigurgei
+rsson; S:ClassicalPianoComposer; https \OT1/cmr/m/n/8 :
+ []
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.178 \bibitem{b3}
+                   Svegliato, J. Deep Jammer, https://github.com/justinsvegl...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Misplaced alignment tab character &.
+l.179 ...ning driven jazz generation using Keras &
+                                                   Theano!, https://github.c...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
 
 ** Conference Paper **
@@ -538,26 +654,33 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3 <./log_4lstm.png> <./compare_results.png>] (./writeup_latex.aux) ) 
+[3 <./pics/log_4lstm.png> <./compare_results.png>] (./writeup_latex.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4419 strings out of 492649
- 64222 string characters out of 6129622
+ 4420 strings out of 492649
+ 64287 string characters out of 6129622
  136138 words of memory out of 5000000
  8231 multiletter control sequences out of 15000+600000
  42222 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,8n,35p,1103b,302s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/loca
-l/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/te
-xmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/f
-onts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
-1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/time
-s/utmri8a.pfb>
-Output written on writeup_latex.pdf (3 pages, 107368 bytes).
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/20
+18/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018
+/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dis
+t/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
+ype1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/t
+imes/utmri8a.pfb>
+Output written on writeup_latex.pdf (3 pages, 140179 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
+ 60 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
