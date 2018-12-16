@@ -165,13 +165,16 @@ Deep Jammer& 4\\
 \end{table}
 
 \section{Discussion of Results}
-Our final model can predict rest note which output is all 0s and also can predict any combination of note and chord which output can have multiple 1s. In generated music, we can see sometimes it looks like our model can memorize the training music which is really amazing.
+Our final model can predict rest note which has all 0s output and also any combination of note and chord which yields output that can have multiple 1s. Based on generated music, we realize that sometimes it seems like our model can memorize the training music, which is really amazing.
 
 \section{Conclusions}
-To improve the quality of generated music, we tried several different model structure, such as three LSTM Layers model with different dimensionality and four LSTM Layers model.
+To improve the quality of generated music, we tried several different model structures, such as a three-LSTM-layer model with different dimensionality and a four-LSTM-layer model.
 
-We also tried to use different beat length as the input, such as use 40 instead of 100, but the result was not good.						
-For the future directions, now our model's prediction is determined if the input is determined, but we believe that music composition is vibrant which means that same input could lead to different output, so we think a probabilistic neural network model could be the next direction.
+We also tried to use different beat lengths as input like using 40 instead of 100. However, the resulting outputs were not good.
+
+Our final model is simply superior to the other experiments mentioned above. Of course, it is also better than some other similar applications chosen as our project baselines based on the survey result.
+
+Now our model's prediction result is fixed if the input is determined, but we believe that music composition should be vibrant which means that same input could lead to different output. So we think that a probabilistic neural network model could be used in future work.
 
 \begin{thebibliography}{00}
 \bibitem{b1} McMahon, B. \textit{Music generator utilizing a Bidirectional LSTM architecture in Keras,} \url{https://github.com/cipher813/AI_Jukebox}.
