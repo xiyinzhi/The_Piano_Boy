@@ -14,10 +14,6 @@ h5py
 
 numpy
 
-glob
-
-pickle
-
 ## Models
 We provide 3 models of 3-layer LSTM with different improvements.
 
