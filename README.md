@@ -25,7 +25,7 @@ We employed the follwing two different models with 88 keys representation:
 
 • 88notes_softmax.ipynb, it only predict the key with the most probability, it use softmax as activation function of output layer and categorical crossentropy as loss function.
 
-Generally speaking, 88 keys model 1 is the best optimized one. You are free to try all models for comparison.
+Generally speaking, 88notes_sigmoid.ipynb is the best optimized one. You are free to try all models for comparison.
 
 ## How to run
 
