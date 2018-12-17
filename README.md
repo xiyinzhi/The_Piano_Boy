@@ -35,7 +35,7 @@ Generally speaking, 88 keys model 1 is the best optimized one. You are free to t
 
 You can just run our .ipynb files in Jupyter Notebook. 
 
-After training, change the weights with the best one in the predict part and generate a piece of amazing new music!
+After training, replace the weights with the best one in the predict part and generate a piece of amazing new music!
 
 
 Now, start your journey!
